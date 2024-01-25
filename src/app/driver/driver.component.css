@@ -26,13 +26,15 @@ course-card {
   .course-card img {
     border-radius: 4px;
     margin-top: 10px;
+    height: 300px;
+    width: 300px;
   }
   
   button {
     margin-top: 20px;
     height: 40px;
     font-size: 20px;
-    background: #21be1e;
+    background: #45c007;
     color: white;
     border-radius: 4px;
   }
@@ -62,9 +64,9 @@ course-card {
   
   .category {
     margin-top: 15px;
-    background: lightcyan;
-    font-size: 14px;
-    color: grey;
+    background: rgb(171, 143, 143);
+    font-size: 20px;
+    color: rgb(105, 57, 57);
     border: 1px solid grey;
     border-radius: 4px;
     padding: 2px 3px;
@@ -85,14 +87,8 @@ course-card {
     box-shadow: 0 2px 16px 0 #de1e19, 0 3px 8px 0 rgba(226, 21, 19, 0.47), 0 6px 8px -1px #b41c18;
   }
 
-  .prv {
-    color: rgb(255, 0, 0);
+  .poz{
+    background: rgb(196, 222, 232);
   }
 
-  .vtor {
-    color: green;
-  }
-
-  .tret {
-    color: blue;
-  }
+  

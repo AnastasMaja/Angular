@@ -1,0 +1,21 @@
+<div [ngClass]="klasi()" [ngStyle]="{'border': vozac.category === 'ADVANCED' ? '2px solid green' : (vozac.category === 'BEGINNER' ? '2px solid red' : '2px solid blue')}">
+    <div class ="course-title">
+        {{reden+'. '+vozac.name}}
+    </div>
+    <ng-template #noImg>
+        <p>No photo</p>
+    </ng-template>
+    <img [src]="vozac.iconUrl" *ngIf="vozac.iconUrl; else noImg">
+        
+    <div class="course-description">
+        {{vozac.team}}
+    </div>
+    <div class ="course-category" [ngSwitch]="vozac.category">
+        <div class ="category" *ngSwitchCase="'BEGINNER'">Beginner</div>
+        <div class ="category" *ngSwitchCase="'ADVANCED'">Advanced</div>
+    </div>
+    <button (click)="klik()">Click</button>
+    <div>
+        Points: {{vozac.points}}
+    </div>
+</div>
